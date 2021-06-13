@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a2431a8-6154-4642-9ae8-2f0ee30b2bb6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README_bak.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +92,7 @@
       <updated>1623403729719</updated>
       <workItem from="1623403736226" duration="1544000" />
       <workItem from="1623405856357" duration="16666000" />
-      <workItem from="1623594257474" duration="7139000" />
+      <workItem from="1623594257474" duration="7915000" />
     </task>
     <servers />
   </component>

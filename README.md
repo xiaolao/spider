@@ -10,3 +10,4 @@
 # Linux or Mac OS
 sudo docker run --name cspider -it xiaolao/cspider:v1 /bin/bash
 ```
+3. 进入镜像后，执行`ls`命令可以看到两个文件`main.c`和`test`，然后执行`./test`看看环境是否正常。
