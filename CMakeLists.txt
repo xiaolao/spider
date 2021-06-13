@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(CSpider)
+project(MySpider C)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -11,104 +11,6 @@ include_directories(include/libuv)
 include_directories(include/libuv/uv)
 include_directories(include/libxml)
 include_directories(include/pcre)
+include_directories(include/cspider)
 
-add_executable(CSpider
-        core/downloader/downloader.c
-        core/downloader/task.c
-        core/includes/cJSON.h
-        core/includes/CS.h
-        core/includes/cs_page.h
-        core/includes/downloader.h
-        core/includes/page_queue.h
-        core/includes/pageProcesser.h
-        core/includes/scheduler.h
-        core/includes/spider.h
-        core/includes/uriparser.h
-        core/includes/utils.h
-        core/init/init.c
-        core/pageProcesser/cs_page.c
-        core/pageProcesser/data.c
-        core/pageProcesser/dataProcess.c
-        core/pageProcesser/page_queue.c
-        core/pageProcesser/user_api.c
-        core/scheduler/watcher.c
-        core/utils/bloom.c
-        core/utils/cJSON.c
-        core/utils/logger.c
-        core/utils/regex.c
-        core/utils/uriparser.c
-        core/utils/xpath.c
-        core/Makefile
-        core/README.md
-        include/curl/curl.h
-        include/curl/curlver.h
-        include/curl/easy.h
-        include/curl/mprintf.h
-        include/curl/multi.h
-        include/curl/system.h
-        include/curl/typecheck-gcc.h
-        include/curl/urlapi.h
-        include/liburi/liburi.h
-        include/liburi/URI.h
-        include/libuv/uv/darwin.h
-        include/libuv/uv/errno.h
-        include/libuv/uv/threadpool.h
-        include/libuv/uv/unix.h
-        include/libuv/uv/version.h
-        include/libuv/uv.h
-        include/libxml/c14n.h
-        include/libxml/catalog.h
-        include/libxml/chvalid.h
-        include/libxml/debugXML.h
-        include/libxml/dict.h
-        include/libxml/DOCBparser.h
-        include/libxml/encoding.h
-        include/libxml/entities.h
-        include/libxml/globals.h
-        include/libxml/hash.h
-        include/libxml/HTMLparser.h
-        include/libxml/HTMLtree.h
-        include/libxml/list.h
-        include/libxml/nanoftp.h
-        include/libxml/nanohttp.h
-        include/libxml/parser.h
-        include/libxml/parserInternals.h
-        include/libxml/pattern.h
-        include/libxml/relaxng.h
-        include/libxml/SAX.h
-        include/libxml/SAX2.h
-        include/libxml/schemasInternals.h
-        include/libxml/schematron.h
-        include/libxml/threads.h
-        include/libxml/tree.h
-        include/libxml/uri.h
-        include/libxml/valid.h
-        include/libxml/xinclude.h
-        include/libxml/xlink.h
-        include/libxml/xmlautomata.h
-        include/libxml/xmlerror.h
-        include/libxml/xmlexports.h
-        include/libxml/xmlIO.h
-        include/libxml/xmlmemory.h
-        include/libxml/xmlmodule.h
-        include/libxml/xmlreader.h
-        include/libxml/xmlregexp.h
-        include/libxml/xmlsave.h
-        include/libxml/xmlschemas.h
-        include/libxml/xmlschemastypes.h
-        include/libxml/xmlstring.h
-        include/libxml/xmlunicode.h
-        include/libxml/xmlversion.h
-        include/libxml/xmlwriter.h
-        include/libxml/xpath.h
-        include/libxml/xpathInternals.h
-        include/libxml/xpointer.h
-        include/pcre/pcre.h
-        include/pcre/pcre_scanner.h
-        include/pcre/pcre_stringpiece.h
-        include/pcre/pcrecpp.h
-        include/pcre/pcrecpparg.h
-        include/pcre/pcreposix.h
-        sample/main.c
-        LICENSE
-        README.md)
+add_executable(MySpider sample/main.c)

@@ -5,3 +5,4 @@ core/.ycm_extra_conf.py
 core/.ycm_extra_conf.pyc
 cmake-build-debug/
 .idea/
+*.xml

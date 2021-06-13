@@ -1,4 +1,4 @@
-#include<cspider/spider.h>
+#include <cspider/spider.h>
 #include <locale.h>
 
 void p(cspider_t *cspider, char *d, char *url, void *user_data) {
